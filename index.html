@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dhenmark Quiñonez – Résumé</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 40px;
+      color: #333;
+      opacity: 0;
+      animation: fadeInBody 1s ease-in forwards;
+    }
+
+    @keyframes fadeInBody {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .resume-container {
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      transform: translateY(30px);
+      opacity: 0;
+      animation: slideFadeIn 1.2s ease-out 0.3s forwards;
+    }
+
+    @keyframes slideFadeIn {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1, h2 {
+      color: #2a7ae2;
+      transition: color 0.3s ease-in-out;
+    }
+
+    h1:hover, h2:hover {
+      color: #1954aa;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    ul li:hover {
+      transform: scale(1.05);
+    }
+
+    .section {
+      margin-bottom: 30px;
+      opacity: 0;
+      animation: fadeUp 0.8s ease-out forwards;
+    }
+
+    .section:nth-child(3) { animation-delay: 0.5s; }
+    .section:nth-child(4) { animation-delay: 0.8s; }
+    .section:nth-child(5) { animation-delay: 1.1s; }
+    .section:nth-child(6) { animation-delay: 1.4s; }
+    .section:nth-child(7) { animation-delay: 1.7s; }
+    .section:nth-child(8) { animation-delay: 2s; }
+
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .contact {
+      font-size: 0.95em;
+      color: #666;
+    }
+
+    .code-comment {
+      color: #999;
+      font-style: italic;
+      text-align: center;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <h1>Dhenmark Quiñonez</h1>
+    <p class="contact">0938-423-4558 | quinonezdhenmark@gmail.com | Imus, Cavite, Philippines</p>
+
+    <div class="section">
+      <h2>💼 Professional Summary</h2>
+      <p>Versatile IT Support Specialist with hands-on experience in network infrastructure, system administration, and cybersecurity. Strong foundation in malware analysis and debugging with proven success in deploying enterprise-grade network systems and VoIP solutions.</p>
+    </div>
+
+    <div class="section">
+      <h2>🛠️ Core Skills</h2>
+      <ul>
+        <li>Network Infrastructure: Cisco switching, VLANs, trunking, stacking, structured cabling</li>
+        <li>Firewall & Security: firewall configuration, LAN segmentation, Wireshark, malware analysis</li>
+        <li>Virtualization & Servers: Proxmox VE, Dell PowerEdge deployment</li>
+        <li>Wireless Networking: Ubiquiti & Ruijie AP setup and optimization</li>
+        <li>VoIP Systems: Asterisk-based VoIP, hybrid & IP PBX migration</li>
+        <li>Debugging & Analysis: IDA, x32dbg, sandbox analysis</li>
+        <li>Project Coordination: Onsite supervision, documentation, client communication</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>💻 Professional Experience</h2>
+      <h3>IT Support Specialist – Dynamic Link Solutions Inc. (Aug 2023 – Present)</h3>
+      <ul>
+        <li>Led 4 major structured cabling projects for voice and data networks</li>
+        <li>Executed 15+ deployments with switch config, VLAN planning, and AP installations</li>
+        <li>Configured Ubiquiti and Ruijie APs with secure SSID segregation</li>
+        <li>Set up Dell servers and Proxmox VE environments</li>
+        <li>Upgraded PBX systems using Asterisk VoIP servers</li>
+        <li>Provided full-cycle client support and documentation</li>
+      </ul>
+
+      <h3>Core Technology Engineer – Trend Micro (Aug 2022 – Jan 2023)</h3>
+      <ul>
+        <li>Performed malware analysis with IDA, x32dbg, and Wireshark</li>
+        <li>Assisted in threat classification and lab-based reverse engineering</li>
+        <li>Developed internal documentation and contributed to naming conventions</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>📂 Key Projects</h2>
+      <ul>
+        <li><strong>Structured Cabling (4 Sites):</strong> Led voice/data cabling deployments with testing</li>
+        <li><strong>Network Setup (15+ Projects):</strong> Implemented switch, firewall, server & AP configs</li>
+        <li><strong>Virtualization:</strong> Installed Proxmox VE for hosting client systems</li>
+        <li><strong>Wi-Fi Deployment:</strong> Enterprise APs with VLAN-tagged SSIDs</li>
+        <li><strong>VoIP Modernization:</strong> Deployed Asterisk VoIP replacing legacy PBX</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🎓 Education</h2>
+      <p>Bachelor of Science in Information Technology – Occidental Mindoro State College</p>
+    </div>
+
+    <div class="section">
+      <h2>📜 Certifications</h2>
+      <ul>
+        <li>Career Service Eligibility (CSE) – Professional</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <p class="code-comment"># Powered by caffein and curiosity.</p>
+    </div>
+  </div>
+</body>
+</html>
